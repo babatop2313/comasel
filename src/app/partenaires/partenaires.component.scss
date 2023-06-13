@@ -1,0 +1,39 @@
+.partener-section{
+    margin-bottom: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    
+}
+.section-title {
+    font-size: 32px;
+    color: #F49C63;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+.partner-logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .partner-logo {
+    margin: 10px;
+  }
+  
+  .partner-logo img {
+    width: 100%;
+    height: auto;
+    max-width: 100px; /* Ajustez la taille maximale selon vos besoins */
+    transition: transform 0.3s;
+    margin-bottom: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  
+  .partner-logo img:hover {
+    transform: scale(1.1);
+  }
+  
