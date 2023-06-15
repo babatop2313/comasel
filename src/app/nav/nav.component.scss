@@ -1,14 +1,36 @@
 // .bg-custom {
 //     background-color: #F49C63 !important;
 //   }
-.navbar {
-    background-color: #FFFF;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    
-    width: 100%;
-    position: fixed;
-    z-index: 1;
-  }
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f8f8f8;
+  padding: 20px;
+}
+
+.header-logo img {
+  height: 50px;
+}
+
+.header-contry {
+  display: flex;
+  align-items: center;
+}
+
+.header-contry img {
+  height: 30px;
+  margin-right: 10px;
+}
+
+.contact-info {
+  font-weight: bold;
+}
+
+
+
+
+
   
   .navbar-brand {
     color: #fff;
@@ -16,11 +38,37 @@
   }
   
   .navbar-nav .nav-item .nav-link {
-    color: #000;
+    color: #fff;
     transition: color 0.3s ease;
+
   }
-  
+
   .navbar-nav .nav-item .nav-link:hover {
     color: #fdfd15;
+  }
+  .dropdown-item:hover{
+    background-color: #fdfd15;;
+  }
+
+  .navbar {
+    background-color:#99cd32 ;//#59ad32
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+   // position: fixed;
+    z-index: 2;
+  }
+  #navbarNav{
+    justify-content: center;
+    align-items: center;
+  }
+  .navbar-nav  {
+    list-style: none;
+    display: flex;
+    // gap: 20px;
+    margin: 0;
+    padding: 0;
   }
   

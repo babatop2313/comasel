@@ -1,0 +1,79 @@
+.bureaux {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+    
+    .card {
+        // ...
+        transition: transform 0.3s ease-in-out;
+    
+        &:hover {
+          transform: scale(1.05);
+        }
+      }
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  h2 {
+    text-align: center;
+  }
+  
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  
+  .card {
+    width: 300px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .card-body {
+    padding: 20px;
+  }
+  
+  .card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .card p {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+    50% {
+      opacity: 0.5;
+      transform: translateY(10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .bureaux{
+    animation: fadeIn 3s ease-in-out;
+  }
+  

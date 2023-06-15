@@ -1,0 +1,17 @@
+<section class="bureaux" >
+    <div class="container">
+      <h2>Nos bureaux</h2>
+      <div class="card-container">
+        <div class="card" *ngFor="let bureau of bureaux">
+          <img [src]="bureau.image" alt="Bureau {{ bureau.nom }}">
+          <div class="card-body">
+            <h3>{{ bureau.nom }}</h3>
+            <p>{{ bureau.adresse }}</p>
+            <p>Téléphone : {{ bureau.telephone }}</p>
+            <p>Email : {{ bureau.email }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  

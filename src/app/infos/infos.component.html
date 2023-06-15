@@ -1,0 +1,53 @@
+<section class="serv-gallery-section" id="infos-section">
+    <div class="container">
+      <h2 class="section-title">INFORMATIONS</h2>
+      <div id="servCarousel"  >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row">
+              <div *ngFor="let info of infos " class="col-md-4">
+                <div class="serv-card">
+                  <img src={{info.icone}} alt="service 1" class="serv-image img-fluid">
+                  <div class="serv-details">
+                    <h3 class="serv-name">{{info.nom}}</h3>
+                    <p class="serv-info">{{ info.texte}}</p>
+                  </div>
+                </div>
+              </div>
+             
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <!-- Ajoutez d'autres oiseaux ici -->
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#servCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually">Précédent</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#servCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Suivant</span>
+        </button>
+      </div>
+    </div>
+  </section>
+  
+  
+  <div class="banner">
+    <div class="count-block">
+      <div class="count">{{ numClients }}+</div>
+      <div class="name">Clients</div>
+    </div>
+    <div class="count-block">
+      <div class="count">{{ numClients }}</div>
+      <div class="name">Bureaux</div>
+    </div>
+    <div class="count-block">
+      <div class="count">{{ numClients }}</div>
+      <div class="name">Points de vente</div>
+    </div>
+  </div>
+  
