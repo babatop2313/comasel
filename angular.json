@@ -30,9 +30,15 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "node_modules/bootstrap-icons/font/bootstrap-icons.css",
+              "src/assets/lib/animate/animate.min.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/wowjs/dist/wow.min.js",
+              "src/assets/lib/wow/wow.min.js",
+              "src/assets/js/main.js"
+            ]
           },
           "configurations": {
             "production": {

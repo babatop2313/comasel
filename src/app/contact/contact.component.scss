@@ -1,0 +1,48 @@
+.contact-section {
+    padding: 50px 0;
+  }
+  
+  .map-container {
+    position: relative;
+    height: 400px;
+  }
+  
+  .contact-info {
+    text-align: center;
+  }
+  
+  .logo img {
+    max-width: 200px;
+    margin-bottom: 20px;
+  }
+  
+  .company-name {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333; /* Couleur du texte */
+  }
+  
+  .address,
+  .email,
+  .phone {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #666; /* Couleur du texte */
+  }
+  
+  .email:before,
+  .phone:before {
+    content: "\f0e0"; /* Code de l'icône Envelope de FontAwesome */
+    font-family: "Font Awesome 5 Free"; /* Utilisez votre propre police d'icônes */
+    font-weight: 900;
+    margin-right: 5px;
+  }
+  
+  .phone:before {
+    content: "\f095"; /* Code de l'icône Phone de FontAwesome */
+  }
+  h2{
+    text-align: center;
+    margin-bottom: 3%;
+    color: #99cd32;
+  }

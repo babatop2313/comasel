@@ -1,0 +1,31 @@
+.container {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    // margin: 0;
+    padding: 20px;
+    margin-top: 3%;
+    text-align: justify;
+    font-family: 'Source Sans Pro', sans-serif;//Montserrat
+    margin-bottom: 5%;
+  }
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    // color: #9acd32 ;
+  }
+  
+  p {
+    margin-bottom: 10px;
+  }
+  
+  ul {
+    padding-left: 20px;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    h1 {
+      font-size: 20px;
+    }
+  }
+  

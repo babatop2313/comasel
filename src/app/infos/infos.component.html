@@ -7,8 +7,11 @@
             <div class="row">
               <div *ngFor="let info of infos " class="col-md-4">
                 <div class="serv-card">
-                  <img src={{info.icone}} alt="service 1" class="serv-image img-fluid">
+                 
+                  <!-- <img src= alt="service 1" class="serv-image img-fluid">
+                  bi-basket -->
                   <div class="serv-details">
+                    <i class="bi {{info.icone}} my-custom-icon"></i>
                     <h3 class="serv-name">{{info.nom}}</h3>
                     <p class="serv-info">{{ info.texte}}</p>
                   </div>
@@ -17,37 +20,44 @@
              
             </div>
           </div>
-          <div class="carousel-item">
+          <!-- <div class="carousel-item">
             <div class="row">
-              <!-- Ajoutez d'autres oiseaux ici -->
+          
             </div>
-          </div>
+          </div> -->
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#servCarousel" data-bs-slide="prev">
+        <!-- <button class="carousel-control-prev" type="button" data-bs-target="#servCarousel" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually">Précédent</span>
         </button>
         <button class="carousel-control-next" type="button" data-bs-target="#servCarousel" data-bs-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Suivant</span>
-        </button>
+        </button> -->
       </div>
     </div>
   </section>
   
   
-  <div class="banner">
+  <div class="banner wow fadeInUp" data-wow-delay="0.5s">
     <div class="count-block">
       <div class="count">{{ numClients }}+</div>
-      <div class="name">Clients</div>
+      <div class="name">Clients <i class="bi bi-people"></i></div>
     </div>
     <div class="count-block">
-      <div class="count">{{ numClients }}</div>
-      <div class="name">Bureaux</div>
+      <div class="count">{{ numBureaux }}</div>
+      <div class="name">Agences <i class="bi bi-building"></i></div>
     </div>
     <div class="count-block">
-      <div class="count">{{ numClients }}</div>
-      <div class="name">Points de vente</div>
+      <div class="count">{{ numVillages }}</div>
+      <div class="name">Villages électrifiés <i class="bi bi-lightning"></i></div>
+    </div>
+    <div class="count-block">
+      <div class="count" >{{ numLignes }}+</div>
+      <div class="name">Km de lignes <i class="bi bi-arrows-move"></i></div>
     </div>
   </div>
+  
+  
+  
   
