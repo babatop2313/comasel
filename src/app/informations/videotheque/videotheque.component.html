@@ -1,1 +1,10 @@
-<p>videotheque works!</p>
+<div class="container">
+<div class="video-grid">
+    
+    <div class="video-item col-md-4 col-sm-6" *ngFor="let video of videos">
+      <iframe width="560" height="315" [src]="video.id" title="{{video.title}}" frameborder="0" allowfullscreen></iframe>
+      <p class="video-description">{{ video.description }}</p>
+    </div>
+  
+  </div>
+</div>  

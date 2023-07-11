@@ -16,82 +16,116 @@ export class InfosComponent  implements AfterViewInit{
   totalLignes : number = 1062
   messageVisible: boolean = false;
 
-  ngAfterViewInit() {
-    this.messageVisible = true;
+  // ngAfterViewInit() {
+  //   this.messageVisible = true;
  
-  }
-  ngOnInit(): void {
+  // }
+  // count: number = 0;
+  // targetCount: number = 100;
+  duration: number = 2000; // Durée de l'animation en millisecondes
+
+  ngAfterViewInit(){
     this.startCountAnimation(this.totalClients, 1);
     this.startCountAnimation(this.totalBureaux, 2);
     this.startCountAnimation(this.totalVillges, 3);
     this.startCountAnimation(this.totalLignes, 4);
 
-
+// this.startCountAnimation2()
   }
-
-  startCountAnimation(total : number, id : number): void {
-    const animationDuration = 2000; // Durée de l'animation en millisecondes
-    const incrementStep = Math.ceil(total / (animationDuration / 50)); // Incrément à chaque itération
-
+  startCountAnimation(targetCount : number, id: number) {
+    const increment = targetCount / (this.duration / 10); // Calcule l'incrément par intervalle de 10ms
     let currentCount = 0;
-    const incrementCount = () => {
-      if (currentCount < total) {
-        currentCount += incrementStep;
-        if (currentCount > total) {
-          currentCount = total;
-        }
-        if(id== 1)
-          this.numClients = currentCount;
+  
+    const interval = setInterval(() => {
+      currentCount += increment;
+      if(id== 1)
+          this.numClients = Math.floor(currentCount);;
         if(id==2)
-          this.numBureaux = currentCount
+          this.numBureaux = Math.floor(currentCount);
         if(id==3)
-          this.numVillages = currentCount
+          this.numVillages = Math.floor(currentCount);
         if(id==4)
-          this.numLignes = currentCount
-        setTimeout(incrementCount, 50); // Appel récursif avec un délai de 50ms entre chaque itération
+          this.numLignes = Math.floor(currentCount);
+      // this.count = Math.floor(currentCount);
+  
+      if (currentCount >= targetCount) {
+        // this.count = targetCount;
+        if(id== 1)
+          this.numClients = targetCount;
+        if(id==2)
+          this.numBureaux = targetCount
+        if(id==3)
+          this.numVillages = targetCount
+        if(id==4)
+          this.numLignes = targetCount
+        clearInterval(interval);
       }
-    };
-
-    setTimeout(incrementCount, 50);
+    }, 100);
   }
+ 
   infos = [{
     "icone" : "bi-box-arrow-in-down-left",
     "nom": "Abonnement",
-    "texte": "Informations supplémentaires sur le serve 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "texte": "Pour s'abonner le client devra : Se rendre à son agence d'appartenance.",
     "link":""
   },
   {
     "icone" : "bi-x-circle",
     "nom": "Résiliation",
-    "texte": "Informations supplémentaires sur le serve 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "texte": "Le client a 2 options lors d’une résiliation : Résilier et laisser le compteur sur place ou le déposer à son agence.",
     "link":""
   },
   {
     "icone" : "bi-basket",
     "nom": "Achat de code",
-    "texte": "Informations supplémentaires sur le serve 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "texte": "Les achats de code se font dans les gences et dans les points de ventes.",
     "link":""
   },
   {
     "icone" : "bi-building-fill-add",
     "nom": "Ouverture Point de vente",
-    "texte": "Informations supplémentaires sur le serve 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "texte": "Rendez-vous au siége pour plus d'informations.",
     "link":""
   },
   {
     "icone" : "bi-truck",
     "nom": "Déménagement",
-    "texte": "Informations supplémentaires sur le serve 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "texte": "Lors d’un déménagement, le client doit impérativement résilier son contrat d’abonnement ...",
     "link":""
   },
   {
     "icone" : "bi-exclamation-circle",
     "nom": "Réclamation",
-    "texte": "Informations supplémentaires sur le serve 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "texte": "Pour toutes vos réclamations, merci de nous appeler ou de vous rendre à l'agence la plus proche.",
     "link":""
   },
  ]
+
 }
 
+// startCountAnimation(total : number, id : number): void {
+//   const animationDuration = 2000; // Durée de l'animation en millisecondes
+//   const incrementStep = Math.ceil(total / (animationDuration / 50)); // Incrément à chaque itération
 
+//   let currentCount = 0;
+//   const incrementCount = () => {
+    
+//     if (currentCount < total) {
+//       currentCount += incrementStep;
+//       if (currentCount > total) {
+//         currentCount = total;
+//       }
+//       if(id== 1)
+//         this.numClients = currentCount;
+//       if(id==2)
+//         this.numBureaux = currentCount
+//       if(id==3)
+//         this.numVillages = currentCount
+//       if(id==4)
+//         this.numLignes = currentCount
+//       setTimeout(incrementCount, 50); // Appel récursif avec un délai de 50ms entre chaque itération
+//     }
+//   };
 
+//   setTimeout(incrementCount, 100);
+// }

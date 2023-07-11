@@ -1,1 +1,12 @@
-<p>phototheque works!</p>
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 col-sm-6" *ngFor="let photo of photos">
+          <a href="{{ photo.url }}" data-lightbox="gallery">
+            <div class="photo">
+              <img [src]="photo.url" alt="Photo" title="{{ photo.title }}">
+              <!-- <div class="photo-title">{{ photo.title }}</div> -->
+            </div>
+          </a>
+        </div>
+      </div>      
+</div>

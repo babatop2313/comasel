@@ -66,7 +66,8 @@ import { NouveauxComponent } from './projets/nouveaux/nouveaux.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+ 
   ],
   providers: [],
   bootstrap: [AppComponent]

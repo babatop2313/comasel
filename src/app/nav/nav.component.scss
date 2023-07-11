@@ -28,30 +28,30 @@
 }
 
 
-
-
-
-  
   .navbar-brand {
     color: #fff;
     font-weight: bold;
   }
   
   .navbar-nav .nav-item .nav-link {
-    color: #fff;
+    color: #000;
     transition: color 0.3s ease;
 
   }
 
   .navbar-nav .nav-item .nav-link:hover {
-    color: #fdfd15;
+    //color: #fdfd15;
+    color: green;
   }
   .dropdown-item:hover{
-    background-color: #fdfd15;;
+    // background-color: #fdfd15;
+    background-color: green;
+    color: #fff;
+    height: 8vh;
   }
 
   .navbar {
-    background-color:#99cd32 ;//#59ad32
+    // background-color:#99cd32 ;//#59ad32
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     display: flex;
     justify-content: center;
@@ -88,3 +88,5 @@
     .dropdown-menu > li:hover > .dropdown-submenu {
     display: block;
     }
+
+ 

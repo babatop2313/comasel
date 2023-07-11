@@ -59,24 +59,24 @@ footer {
     font-size: 24px;
   }
 
-  //back to up
-  .back-to-top-btn {
-    position: fixed;
-    bottom: 10%;
-    right: 20px;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: #99cd32;
-    color: #fdfd15;
-    text-align: center;
-    line-height: 50px;
-    font-size: 24px;
-    text-decoration: none;
-    transition: opacity 0.3s;
-  }
-  
-  .back-to-top-btn:hover {
-    opacity: 0.8;
-  }
-  
+     //back to up
+     .back-to-top {
+      position: fixed;
+      bottom: 10%;
+      right: 20px;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: #99cd32;
+      color: #fdfd15;
+      text-align: center;
+      line-height: 50px;
+      font-size: 24px;
+      text-decoration: none;
+      transition: opacity 0.3s;
+    }
+    
+    .back-to-top:hover {
+      opacity: 0.8;
+    }
+    

@@ -1,0 +1,54 @@
+.container {
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+  
+.col-md-4{
+
+    margin-bottom: 5%;
+}
+  .photo-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+  }
+  
+  .photo {
+    text-align: center;
+  }
+  
+  .photo img {
+    width: 100%;
+    height: auto;
+    text-align: center;
+  }
+  
+  .photo-title {
+    margin-top: 10px;
+    font-size: 16px;
+  }
+  
+  
+  @media screen and (max-width: 768px) {
+    .photo {
+      text-align: left;
+    }
+  
+    .photo img {
+      width: 100%;
+    }
+  
+   
+  }
+  
+  //zoom
+
+  .photo img {
+    transition: transform 0.3s;
+  }
+  
+  .photo img:hover {
+    transform: scale(1.5);
+    cursor: pointer;
+  }
+  
